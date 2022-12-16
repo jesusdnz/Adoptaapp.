@@ -1,0 +1,160 @@
+
+
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="subtitulo ion-text-wrap">
+      Adoptaapp
+    </ion-title>
+       <ion-buttons slot="start">
+        <ion-button (click)="openMenu()" color="primary">
+          <ion-icon slot="icon-only"  name="menu-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div style="text-align: end; margin: 10px;">
+    <ion-button (click)="nuevo()" class="normal" color="dark"> Nuevo </ion-button>
+  </div>
+
+  <div *ngIf="enableNewMascota">
+
+
+    <ion-item>
+      <ion-buttons slot="end">
+        <ion-button (click)="enableNewMascota = false">
+          <ion-icon color="dark" slot="icon-only" name="close"></ion-icon>
+        </ion-button>
+
+
+        <ion-button (click)="guardarMascota()">
+          <ion-icon color="primary" slot="icon-only" name="save-sharp"></ion-icon>
+        </ion-button>
+        
+
+      </ion-buttons>
+    </ion-item>
+
+    <h3 class="titulo encabezado2">Registrar Mascota</h3>
+  
+    <ion-item>
+      <ion-label class="normal" position="floating">
+        Nombre:
+      </ion-label>
+      <ion-input [(ngModel)]="newMascota.nombre" class="normal" type="text" inputmode="text">
+      </ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label class="normal" position="floating">
+        Raza:
+      </ion-label>
+      <ion-input [(ngModel)]="newMascota.raza" class="normal" type="text" inputmode="text">
+      </ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label class="normal" position="floating">
+        Edad:
+      </ion-label>
+      <ion-input [(ngModel)]="newMascota.edad" class="normal" type="text" inputmode="text">
+      </ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label class="normal" position="floating">
+        Sexo:
+      </ion-label>
+      <ion-input [(ngModel)]="newMascota.genero" class="normal" type="text" inputmode="text">
+      </ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label class="normal" position="floating">
+        Peso:
+      </ion-label>
+      <ion-input [(ngModel)]="newMascota.peso" class="normal" type="text" inputmode="text">
+      </ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label class="normal" position="floating">
+        Información:
+      </ion-label>
+      <ion-input [(ngModel)]="newMascota.informacion" class="normal" type="text" inputmode="text">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="normal" position="floating">
+        Celular:
+      </ion-label>
+      <ion-input [(ngModel)]="newMascota.celular" class="normal" type="text" inputmode="text">
+      </ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label class="normal">
+        Foto:
+      </ion-label>
+      <ion-buttons slot="end">
+        <ion-button>
+          <label for="file-upload">
+            <ion-icon color="dark" slot="icon-only" name="images"></ion-icon>
+          </label>
+          <input (change)="newImageUpload($event)" id="file-upload" style="display: none" type="file" accept="image/*">
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+
+    <ion-item>
+      <img class="image" [src]="newMascota.foto">
+    </ion-item>
+
+
+
+    <!-- 
+      <ion-button style="margin: 30 px;" expand="full" color="dark"
+      (click)="guardarMascota() ">
+        Guardar
+      <ion-button>
+    -->
+
+    
+
+
+  </div>
+  
+
+  <ion-card>
+
+    <h3 class="titulo encabezado2">Mascotas</h3>
+
+    <ion-item *ngFor="let mascota of mascotas">
+      <ion-label class="normal">Nombre: {{mascota.nombre}} </ion-label>
+      <ion-label class="normal">Raza: {{mascota.raza}} </ion-label>
+
+      <!--<ion-buttons slot="end">
+        <ion-button (click)=" newMascota = mascota; enableNewMascota = true; ">
+          <ion-icon slot="icon-only" color="dark" name="create-sharp"></ion-icon>
+        </ion-button>
+        <ion-button (click)="deleteMascota(mascota)">
+          <ion-icon slot="icon-only" color="danger" name="trash-bin"></ion-icon>
+        </ion-button>
+      </ion-buttons>-->
+    </ion-item>
+
+  </ion-card>
+
+
+
+  
+
+
+  
+
+
+</ion-content>

@@ -24,3 +24,86 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,600;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap'); 
+
+.titulo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    
+}
+
+.subtitulo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3880ff;
+}
+
+.normal {
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 14px !important;  
+    color: #3880ff !important;
+}
+
+.encabezado {
+    background: #85C1E9 ;
+    //background: #68bbbb79;
+    border-radius: 15px;
+    margin: 8px;
+    text-align: center;
+    padding: 10px;
+       
+    font-size: 20px;
+}
+
+//.encabezado{
+    //background: #e9ecef;
+    //background: #e9ecef;
+    //border-radius: 30px;
+    //margin: 20px;
+    //text-align: center;
+    //padding: 10px;
+//}
+
+.image {
+        //padding: 10px;
+        border: 1px solid #e9ecef;
+        width: 100%;
+        border-radius: 20px;
+        margin: auto;
+}
+
+.titulo2 {
+   // font-family: 'Raleway', sans-serif;
+    font-family: 'Rubik Vinyl', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    color: #696969;
+
+}
+
+.encabezado2 {
+    background-color: #ADD8E6 ;
+    //background: #8FBC8F;
+    //background: #68bbbb79;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+       
+    font-size: 20px;
+
+}

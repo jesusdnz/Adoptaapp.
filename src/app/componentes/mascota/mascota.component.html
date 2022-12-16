@@ -1,0 +1,58 @@
+
+
+
+<!--<ion-item>
+  {{mascota.nombre}}
+</ion-item>
+-->
+
+
+  
+  
+  
+  <ion-card style="position: relative">
+    <h3 class="titulo2 encabezado2">ADOPTAME!</h3>
+    <ion-img class="icon-mascota" [src]="mascota.foto"> </ion-img>
+    <ion-item lines="full">
+      <ion-label class="info"> {{mascota.informacion}} </ion-label>
+    </ion-item>
+    <p class="subtitulo"> Nombre: {{mascota.nombre}} </p>
+    <p class="subtitulo"> Raza: {{mascota.raza}} </p>
+    
+    
+    
+    <ion-item>
+      
+      <h3 class="contacto subtitulo"> Contactar al WhatsApp </h3>
+      <ion-buttons slot="end">
+        
+        <ion-button (click)="newMascota= mascota; openWhatsapp()">
+          
+          <ion-icon slot="icon-only" color="success" name="logo-whatsapp"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+
+</ion-card>
+
+
+
+<!--<h3 class="whatssap">Contactar</h3>
+  <ion-buttons slot="end">
+    <ion-button (click)=" newMascota = mascota ; openWhatsapp()">
+      <ion-icon class="icon-mascota" name='logo-whatsapp'></ion-icon>
+    </ion-button>
+  </ion-buttons>-->
+  
+  
+  
+  <!--<h3>Contactar por WhatsApp</h3>
+    <ion-icon slot="icon-only" color="success" name="logo-whatsapp"></ion-icon>
+    <ion-item>
+    </ion-item>-->
+    
+    
+    
+    
+    
+    

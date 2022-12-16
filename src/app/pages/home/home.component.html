@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="subtitulo ion-text-wrap">
+      Adoptaapp
+    </ion-title>
+
+    <ion-buttons slot="start">
+        <ion-button (click)="openMenu()" color="primary">
+          <ion-icon slot="icon-only"  name="menu-sharp"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+    
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/perfil']" >
+        <ion-icon color="primary" slot="icon-only"  name="person-circle"></ion-icon>
+      </ion-button>
+  </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  
+  <div *ngFor="let mascota of mascotas">
+    <app-mascota [mascota]= mascota></app-mascota>
+  </div>
+
+
+
+</ion-content>
